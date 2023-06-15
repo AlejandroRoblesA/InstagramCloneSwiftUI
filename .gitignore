@@ -13,6 +13,6 @@ demos/**/Pods/
 Podfile.lock
 
 ## Cache
-git rm --cached TravelDiscovery.xcodeproj/project.xcworkspace/xcuserdata/alejandro.xcuserdatad/UserInterfaceState.xcuserstate
-git rm --cached TravelDiscovery.xcodeproj/project.xcworkspace/xcuserdata/
-TravelDiscovery.xcodeproj/project.xcworkspace/xcuserdata/
+git rm --cached InstagramCloneSwiftUI.xcodeproj/project.xcworkspace/xcuserdata/alejandro.xcuserdatad/UserInterfaceState.xcuserstate
+git rm --cached InstagramCloneSwiftUI.xcodeproj/project.xcworkspace/xcuserdata/
+InstagramCloneSwiftUI.xcodeproj/project.xcworkspace/xcuserdata/
