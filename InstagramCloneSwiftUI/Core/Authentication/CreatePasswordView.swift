@@ -24,12 +24,12 @@ struct CreatePasswordView: View {
                 .padding(.horizontal, 24)
             
             SecureField("Password", text: $password)
-                .autocapitalization(.none)
                 .modifier(IGTextFieldModifier())
                 .padding(.top)
             
             NavigationLink {
-                CreateUserNameView()
+                CompleteSignUpView()
+                    .navigationBarBackButtonHidden()
             } label: {
                 Text("Next")
                     .font(.subheadline)

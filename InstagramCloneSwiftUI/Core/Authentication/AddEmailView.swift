@@ -22,6 +22,7 @@ struct AddEmailView: View {
                 .foregroundColor(.gray)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
+                .padding(.bottom)
             
             TextField("Email", text: $email)
                 .autocapitalization(.none)

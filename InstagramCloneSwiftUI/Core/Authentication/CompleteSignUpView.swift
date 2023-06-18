@@ -1,5 +1,5 @@
 //
-//  CreateUserNameView.swift
+//  CompleteSignUpView.swift
 //  InstagramCloneSwiftUI
 //
 //  Created by Alejandro Robles on 17/06/23.
@@ -7,32 +7,28 @@
 
 import SwiftUI
 
-struct CreateUserNameView: View {
-    @State private var userName = ""
+struct CompleteSignUpView: View {
+    @State private var password = ""
     @Environment(\.dismiss) var dismiss
     var body: some View {
         VStack(spacing: 12) {
-            Text("Create User Name")
+            Spacer()
+            Text("Welcome to instagram, username.instagram")
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.top)
+                .multilineTextAlignment(.center)
             
-            Text("Pick a user name for your new account. You can always change it later.")
+            Text("Click below to complete registration and start using Instagram.")
                 .font(.footnote)
-                .foregroundColor(.gray)
+                .foregroundColor(.black)
                 .multilineTextAlignment(.center)
                 .padding(.horizontal, 24)
-                .padding(.bottom)
             
-            TextField("User name", text: $userName)
-                .autocapitalization(.none)
-                .modifier(IGTextFieldModifier())
-            
-            NavigationLink {
-                CreatePasswordView()
-                    .navigationBarBackButtonHidden()
+            Button {
+                print("Complete sign up")
             } label: {
-                Text("Next")
+                Text("Complete Sign Up")
                     .font(.subheadline)
                     .fontWeight(.semibold)
                     .foregroundColor(.white)
@@ -55,8 +51,8 @@ struct CreateUserNameView: View {
     }
 }
 
-struct CreateUserNameView_Previews: PreviewProvider {
+struct CompleteSignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateUserNameView()
+        CompleteSignUpView()
     }
 }
