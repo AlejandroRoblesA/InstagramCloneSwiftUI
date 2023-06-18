@@ -83,7 +83,8 @@ struct LoginView: View {
                 Spacer()
                 Divider()
                 NavigationLink {
-                    Text("Sign Up")
+                   AddEmailView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack(spacing: 4) {
                         Text("Don't have an account?")
