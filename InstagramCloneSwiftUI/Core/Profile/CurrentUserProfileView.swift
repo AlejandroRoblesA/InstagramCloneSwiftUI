@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CurrentProfileView: View {
+struct CurrentUserProfileView: View {
     private let gridItems: [GridItem] = [
         .init(.flexible(), spacing: 1),
         .init(.flexible(), spacing: 1),
@@ -80,6 +80,6 @@ struct CurrentProfileView: View {
 
 struct CurrentProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        CurrentProfileView()
+        CurrentUserProfileView()
     }
 }
