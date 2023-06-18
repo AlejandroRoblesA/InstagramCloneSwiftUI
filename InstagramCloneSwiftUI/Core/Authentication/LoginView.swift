@@ -13,6 +13,7 @@ struct LoginView: View {
     var body: some View {
         NavigationStack {
             VStack {
+                Spacer()
                 Image("instagramblack")
                     .resizable()
                     .scaledToFill()
@@ -43,6 +44,55 @@ struct LoginView: View {
                         .padding(.trailing, 20)
                 }
                 .frame(maxWidth: .infinity, alignment: .trailing)
+                
+                Button {
+                    print("Login")
+                } label: {
+                    Text("Login")
+                        .font(.subheadline)
+                        .fontWeight(.semibold)
+                        .foregroundColor(.white)
+                        .frame(width: 360, height: 44)
+                        .background(Color(.systemBlue))
+                        .cornerRadius(8)
+                }
+                .padding(.vertical)
+                
+                HStack {
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                    Text("OR")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                    Rectangle()
+                        .frame(width: (UIScreen.main.bounds.width / 2) - 40, height: 0.5)
+                }
+                .foregroundColor(.gray)
+                
+                HStack {
+                    Image("facebook")
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 20, height: 20)
+                    Text("Continue with Facebook")
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color(.systemBlue))
+                }
+                .padding(.top, 8)
+                Spacer()
+                Divider()
+                NavigationLink {
+                    Text("Sign Up")
+                } label: {
+                    HStack(spacing: 4) {
+                        Text("Don't have an account?")
+                        Text("Sign Up")
+                            .fontWeight(.semibold)
+                    }
+                    .font(.footnote)
+                }
+                .padding(.vertical, 16)
 
             }
         }
