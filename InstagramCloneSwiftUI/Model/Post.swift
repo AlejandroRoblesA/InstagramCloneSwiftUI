@@ -46,6 +46,13 @@ extension Post {
               likes: 123,
               imageURL: "venom2",
               timestamp: Date(),
+              user: User.MOCK_USERS[1]),
+        .init(id: NSUUID().uuidString,
+              ownerUid: NSUUID().uuidString,
+              caption: "Venom is hungry. Time to eat",
+              likes: 123,
+              imageURL: "venom3",
+              timestamp: Date(),
               user: User.MOCK_USERS[1])
     ]
 }
