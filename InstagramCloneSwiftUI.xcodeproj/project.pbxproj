@@ -29,6 +29,7 @@
 		A941A38D2A3AA9D600781E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A941A38C2A3AA9D600781E74 /* Assets.xcassets */; };
 		A941A3902A3AA9D600781E74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A941A38F2A3AA9D600781E74 /* Preview Assets.xcassets */; };
 		A94B13342A426BCB00631007 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B13332A426BCB00631007 /* UploadPostView.swift */; };
+		A94B13362A426FE100631007 /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B13352A426FE100631007 /* UploadPostViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		A941A38C2A3AA9D600781E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A941A38F2A3AA9D600781E74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A94B13332A426BCB00631007 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
+		A94B13352A426FE100631007 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				A94B13332A426BCB00631007 /* UploadPostView.swift */,
+				A94B13352A426FE100631007 /* UploadPostViewModel.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 				A941A3892A3AA9D500781E74 /* InstagramCloneSwiftUIApp.swift in Sources */,
 				A936C77D2A41085B00D611B7 /* PostGridView.swift in Sources */,
 				A926DF2B2A3EB7F8002D2679 /* AddEmailView.swift in Sources */,
+				A94B13362A426FE100631007 /* UploadPostViewModel.swift in Sources */,
 				A936C77F2A410A7100D611B7 /* ProfileHeaderView.swift in Sources */,
 				A926DF332A3EC113002D2679 /* CompleteSignUpView.swift in Sources */,
 				A936C7772A3F8F1900D611B7 /* User.swift in Sources */,

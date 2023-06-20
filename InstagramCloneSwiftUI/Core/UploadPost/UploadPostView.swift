@@ -11,7 +11,7 @@ import PhotosUI
 struct UploadPostView: View {
     @State private var caption = ""
     @State private var imagePickerPresented = false
-    @State private var photoItem: PhotosPickerItem?
+    @StateObject var viewModel = UploadPostViewModel()
     var body: some View {
         VStack{
             HStack {
@@ -47,7 +47,7 @@ struct UploadPostView: View {
         .onAppear{
             imagePickerPresented.toggle()
         }
-        .photosPicker(isPresented: $imagePickerPresented, selection: $photoItem)
+        .photosPicker(isPresented: $imagePickerPresented, selection: $viewModel.selectedImage)
     }
 }
 
