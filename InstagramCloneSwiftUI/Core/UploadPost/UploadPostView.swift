@@ -1,0 +1,51 @@
+//
+//  UploadPostView.swift
+//  InstagramCloneSwiftUI
+//
+//  Created by Alejandro Robles on 20/06/23.
+//
+
+import SwiftUI
+
+struct UploadPostView: View {
+    @State private var caption = ""
+    var body: some View {
+        VStack{
+            HStack {
+                Button {
+                    print("Cancel upload")
+                } label: {
+                    Text("Cancel")
+                }
+                Spacer()
+                Text("New post")
+                    .fontWeight(.semibold)
+                Spacer()
+                Button {
+                    print("Upload")
+                } label: {
+                    Text("Upload")
+                        .fontWeight(.semibold)
+                }
+
+            }
+            .padding(.horizontal)
+            HStack(spacing: 8) {
+                Image("batman")
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 100, height: 100)
+                    .clipped()
+                TextField("Enter your caption...", text: $caption, axis: .vertical)
+            }
+            .padding()
+            Spacer()
+        }
+    }
+}
+
+struct UploadPostView_Previews: PreviewProvider {
+    static var previews: some View {
+        UploadPostView()
+    }
+}

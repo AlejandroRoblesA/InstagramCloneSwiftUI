@@ -28,6 +28,7 @@
 		A941A38B2A3AA9D500781E74 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A941A38A2A3AA9D500781E74 /* ContentView.swift */; };
 		A941A38D2A3AA9D600781E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A941A38C2A3AA9D600781E74 /* Assets.xcassets */; };
 		A941A3902A3AA9D600781E74 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A941A38F2A3AA9D600781E74 /* Preview Assets.xcassets */; };
+		A94B13342A426BCB00631007 /* UploadPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94B13332A426BCB00631007 /* UploadPostView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		A941A38A2A3AA9D500781E74 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A941A38C2A3AA9D600781E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A941A38F2A3AA9D600781E74 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A94B13332A426BCB00631007 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 		A90EA0BC2A3B9B0D00D502C9 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
+				A94B13332A426BCB00631007 /* UploadPostView.swift */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A92214332A3CE484009BC240 /* FeedCell.swift in Sources */,
+				A94B13342A426BCB00631007 /* UploadPostView.swift in Sources */,
 				A90B107B2A3B9E7B004D3EB2 /* ProfileView.swift in Sources */,
 				A936C7792A3F983100D611B7 /* CurrentUserProfileView.swift in Sources */,
 				A926DF2F2A3EBD2D002D2679 /* CreateUserNameView.swift in Sources */,
