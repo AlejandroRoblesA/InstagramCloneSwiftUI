@@ -34,11 +34,13 @@ struct UploadPostView: View {
             }
             .padding(.horizontal)
             HStack(spacing: 8) {
-                Image("batman")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 100, height: 100)
-                    .clipped()
+                if let image = viewModel.postImage {
+                    image
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 100)
+                        .clipped()
+                }
                 TextField("Enter your caption...", text: $caption, axis: .vertical)
             }
             .padding()
