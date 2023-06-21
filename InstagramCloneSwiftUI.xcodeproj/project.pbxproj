@@ -35,6 +35,7 @@
 		A9C4E0112A43B69F003CFFAA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A9C4E0102A43B69F003CFFAA /* FirebaseFirestore */; };
 		A9C4E0132A43B69F003CFFAA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A9C4E0122A43B69F003CFFAA /* FirebaseFirestoreSwift */; };
 		A9C4E0152A43B69F003CFFAA /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = A9C4E0142A43B69F003CFFAA /* FirebaseStorage */; };
+		A9C4E0192A43BCDF003CFFAA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9C4E0182A43BCDF003CFFAA /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		A94B13332A426BCB00631007 /* UploadPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostView.swift; sourceTree = "<group>"; };
 		A94B13352A426FE100631007 /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
 		A9C4E00B2A43B584003CFFAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A9C4E0182A43BCDF003CFFAA /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +141,8 @@
 		A90EA0B62A3B9AAC00D502C9 /* Authentication */ = {
 			isa = PBXGroup;
 			children = (
-				A926DF282A3E9B83002D2679 /* LoginView.swift */,
-				A926DF2A2A3EB7F8002D2679 /* AddEmailView.swift */,
-				A926DF2E2A3EBD2D002D2679 /* CreateUserNameView.swift */,
-				A926DF302A3EBFA7002D2679 /* CreatePasswordView.swift */,
-				A926DF322A3EC113002D2679 /* CompleteSignUpView.swift */,
+				A9C4E0172A43BC8D003CFFAA /* Services */,
+				A9C4E0162A43BC70003CFFAA /* View */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -239,6 +238,26 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A9C4E0162A43BC70003CFFAA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A926DF282A3E9B83002D2679 /* LoginView.swift */,
+				A926DF2A2A3EB7F8002D2679 /* AddEmailView.swift */,
+				A926DF2E2A3EBD2D002D2679 /* CreateUserNameView.swift */,
+				A926DF302A3EBFA7002D2679 /* CreatePasswordView.swift */,
+				A926DF322A3EC113002D2679 /* CompleteSignUpView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9C4E0172A43BC8D003CFFAA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A9C4E0182A43BCDF003CFFAA /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,6 +343,7 @@
 				A90B107B2A3B9E7B004D3EB2 /* ProfileView.swift in Sources */,
 				A936C7792A3F983100D611B7 /* CurrentUserProfileView.swift in Sources */,
 				A926DF2F2A3EBD2D002D2679 /* CreateUserNameView.swift in Sources */,
+				A9C4E0192A43BCDF003CFFAA /* AuthService.swift in Sources */,
 				A936C77B2A40E4CB00D611B7 /* Post.swift in Sources */,
 				A941A38B2A3AA9D500781E74 /* ContentView.swift in Sources */,
 				A926DF292A3E9B83002D2679 /* LoginView.swift in Sources */,
