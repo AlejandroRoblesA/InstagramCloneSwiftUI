@@ -11,6 +11,8 @@ import PhotosUI
 struct EditProfileView: View {
     @Environment(\.dismiss) var dismiss
     @State private var selectedImages: PhotosPickerItem?
+    @State private var fullName = ""
+    @State private var bio = ""
     var body: some View {
         VStack {
             VStack {
@@ -30,7 +32,8 @@ struct EditProfileView: View {
                             .font(.subheadline)
                             .fontWeight(.bold)
                     }
-                }.padding()
+                }
+                .padding(.horizontal)
                 Divider()
             }
             PhotosPicker(selection: $selectedImages) {
@@ -48,6 +51,11 @@ struct EditProfileView: View {
                 }
             }
             .padding(.vertical, 8)
+            VStack {
+                EditProfileRowView(title: "Name", placeholder: "Enter your name", text: $fullName)
+                EditProfileRowView(title: "Bio", placeholder: "Enter your bio", text: $bio)
+            }
+            Spacer()
         }
     }
 }
