@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A90A47372A49002400737660 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A47362A49002400737660 /* EditProfileView.swift */; };
 		A90B107B2A3B9E7B004D3EB2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B107A2A3B9E7B004D3EB2 /* ProfileView.swift */; };
 		A90B107E2A3BA874004D3EB2 /* UserStatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90B107D2A3BA874004D3EB2 /* UserStatView.swift */; };
 		A90EA0BE2A3B9BBB00D502C9 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90EA0BD2A3B9BBB00D502C9 /* MainTabView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A90A47362A49002400737660 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
 		A90B107A2A3B9E7B004D3EB2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A90B107D2A3BA874004D3EB2 /* UserStatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatView.swift; sourceTree = "<group>"; };
 		A90EA0BD2A3B9BBB00D502C9 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
@@ -174,6 +176,7 @@
 				A90B107A2A3B9E7B004D3EB2 /* ProfileView.swift */,
 				A936C7782A3F983100D611B7 /* CurrentUserProfileView.swift */,
 				A936C77E2A410A7100D611B7 /* ProfileHeaderView.swift */,
+				A90A47362A49002400737660 /* EditProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				A936C77D2A41085B00D611B7 /* PostGridView.swift in Sources */,
 				A926DF2B2A3EB7F8002D2679 /* AddEmailView.swift in Sources */,
 				A9C4E01D2A43BED9003CFFAA /* ContentViewModel.swift in Sources */,
+				A90A47372A49002400737660 /* EditProfileView.swift in Sources */,
 				A9D42C5E2A44DE6D009C6C08 /* LoginViewModel.swift in Sources */,
 				A9D42C5C2A44CCF2009C6C08 /* RegistrationViewModel.swift in Sources */,
 				A94B13362A426FE100631007 /* UploadPostViewModel.swift in Sources */,
