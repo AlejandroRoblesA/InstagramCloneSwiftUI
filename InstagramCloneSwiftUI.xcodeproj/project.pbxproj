@@ -240,8 +240,8 @@
 		A90EA0BC2A3B9B0D00D502C9 /* UploadPost */ = {
 			isa = PBXGroup;
 			children = (
-				A94B13332A426BCB00631007 /* UploadPostView.swift */,
-				A94B13352A426FE100631007 /* UploadPostViewModel.swift */,
+				A960E21A2A4B9B8300CAEBC3 /* View */,
+				A960E2192A4B9B7E00CAEBC3 /* ViewModel */,
 			);
 			path = UploadPost;
 			sourceTree = "<group>";
@@ -283,6 +283,22 @@
 				A941A38F2A3AA9D600781E74 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A960E2192A4B9B7E00CAEBC3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A94B13352A426FE100631007 /* UploadPostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A960E21A2A4B9B8300CAEBC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A94B13332A426BCB00631007 /* UploadPostView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A9872A632A47CB9400A67F36 /* View */ = {
