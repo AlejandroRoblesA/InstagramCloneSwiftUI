@@ -13,14 +13,12 @@ struct FeedCell: View {
         VStack {
             HStack {
                 if let user = post.user {
-                    Image(user.profileImageUrl ?? "")
-                        .resizable()
-                        .scaledToFill()
-                        .frame(width: 40, height: 40)
-                        .clipShape(Circle())
+                    CircularProfileImageView(user: user, size: .xSmall)
                     Text(user.userName)
-                    Spacer()
+                        .font(.footnote)
+                        .fontWeight(.semibold)
                 }
+                Spacer()
             }
             .padding(.leading, 8)
             Image(post.imageURL)
