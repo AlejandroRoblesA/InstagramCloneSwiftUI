@@ -6,3 +6,17 @@
 //
 
 import Foundation
+import Firebase
+
+class FeedViewModel: ObservableObject {
+    @Published var post = [Post]()
+    
+    init () {
+        Task { try await fetchPosts() }
+    }
+    
+    func fetchPosts() async throws {
+        let snapshot = try await Firestore.firestore().collection("posts").getDocuments()
+        self.post = try snapshot.documents.compactMap({ try $0.data(as: Post.self)})
+    }
+}
